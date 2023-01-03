@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="falmeidaSem2.Notas">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label x:Name="lblUsuario" HorizontalTextAlignment="End" FontSize="16"/>
+                <Label Text="CALIFICACIONES EJERCICIO"/>
+            <Label Text="NOTAS PARCIAL 1" FontSize="20" TextColor="RED"/>
+            <Entry x:Name="txtnota1P1" Placeholder="Nota de Seguimiento" Keyboard="Numeric" TextChanged="txtnota1P1_TextChanged"/>
+            <Entry x:Name="txtnota2P1" Placeholder="Nota de Examen" Keyboard="Numeric" TextChanged="txtnota2P1_TextChanged"/>
+            <Entry x:Name="txtParcial1" Placeholder="Nota Parcial 1" IsEnabled="False"/>
+            <Label Text="NOTAS PARCIAL 2" FontSize="20" TextColor="Green"/>
+            <Entry x:Name="txtnota1P2" Placeholder="Nota de Seguimiento" Keyboard="Numeric" TextChanged="txtnota1P2_TextChanged"/>
+            <Entry x:Name="txtnota2P2" Placeholder="Nota de Examen" Keyboard="Numeric" TextChanged="txtnota2P2_TextChanged"/>
+            <Entry x:Name="txtParcial2" Placeholder="Nota Parcial 2" IsEnabled="False"/>
+            <Button x:Name="btnNotasFinales" Text="PROMEDIAR NOTAS" Clicked="btnNotasFinales_Clicked"/>
+            <Label Text="NOTAS FINALES" FontSize="20" TextColor="Black"/>
+            <Entry x:Name="txtNotaFinal" Placeholder="Nota Final Parciales" IsEnabled="False"/>
+                <Entry x:Name="txtEstado" Placeholder="Estado Estudiante" IsEnabled="False"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
